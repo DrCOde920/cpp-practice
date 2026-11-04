@@ -6,12 +6,12 @@ int main() {
     cout << "Check if the year is a leap year: ";
     cin >> leap;
     
-    if(leap % 4 == 0) {
-        cout << leap << " is a leap year.";
-    } else if(leap % 400 == 0) {
+    if(leap % 400 == 0) {
         cout << leap << " is a leap year.";
     } else if(leap % 100 == 0) {
         cout << leap << " is not a leap year.";
+    } else if(leap % 4 == 0) {
+        cout << leap << " is a leap year.";
     }else {
         cout << leap << " is not a leap year.";
     }
